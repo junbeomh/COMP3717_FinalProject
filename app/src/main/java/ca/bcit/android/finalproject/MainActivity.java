@@ -44,8 +44,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-    Toolbar myToolbar = (Toolbar) findViewById(R.id.my_toolbar);
-    setSupportActionBar(myToolbar);
+        Toolbar myToolbar = (Toolbar) findViewById(R.id.my_toolbar);
+        setSupportActionBar(myToolbar);
 
         movielist = new ArrayList<>();
 
@@ -59,8 +59,6 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(new Intent(MainActivity.this, NewMovieActivity.class));
             }
         });
-
-
         setUpRecyclerView();
     }
 
@@ -96,4 +94,5 @@ public class MainActivity extends AppCompatActivity {
         inflater.inflate(R.menu.menu_top, menu);
         return super.onCreateOptionsMenu(menu);
     }
+
 }

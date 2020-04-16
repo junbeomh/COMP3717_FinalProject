@@ -25,21 +25,18 @@
             android:textColor="@color/colorBackground"
             android:textSize="@dimen/activity_text_title"
             android:layout_marginTop="@dimen/activity_margin_xxlarge"
-            android:layout_marginBottom="@dimen/activity_margin_small"
-            />
+            android:layout_marginBottom="@dimen/activity_margin_small" />
 
         <EditText
             android:id="@+id/edit_text_title"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Movie Title"
+            android:layout_height="40dp"
+            android:hint="movie title"
             android:inputType="text"
             android:fontFamily="@font/roboto"
             android:layout_below="@id/textview_movie"
             android:background="@color/colorBackground"
-            android:layout_marginBottom="@dimen/activity_margin_xxlarge"
-            />
-
+            android:layout_marginBottom="@dimen/activity_margin_xxlarge" />
 
         <TextView
             android:id="@+id/textview_description"
@@ -54,8 +51,8 @@
         <EditText
             android:id="@+id/edit_text_description"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Movie Description"
+            android:layout_height="40dp"
+            android:hint="movie description"
             android:fontFamily="@font/roboto"
             android:layout_below="@+id/textview_description"
             android:inputType="text"
@@ -75,9 +72,9 @@
         <EditText
             android:id="@+id/edit_text_url"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="40dp"
             android:fontFamily="@font/roboto"
-            android:hint="Movie Url"
+            android:hint="movie url"
             android:inputType="text"
             android:layout_below="@id/textview_url"
             android:background="@color/colorBackground"

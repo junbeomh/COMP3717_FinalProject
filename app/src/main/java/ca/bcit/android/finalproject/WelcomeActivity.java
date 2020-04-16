@@ -40,7 +40,7 @@ public class WelcomeActivity extends AppCompatActivity {
         bottomAnim = AnimationUtils.loadAnimation(this, R.anim.bottom_animation);
 
         // Set logo to app color
-        logo_raw = ResourcesCompat.getDrawable(getResources(), R.drawable.app_image, null);
+        logo_raw = ResourcesCompat.getDrawable(getResources(), R.drawable.ic_movie, null);
         int appColor = ResourcesCompat.getColor(getResources(), R.color.colorPrimary, null);
         logo_raw.setColorFilter(new PorterDuffColorFilter(appColor, PorterDuff.Mode.SRC_ATOP));
 

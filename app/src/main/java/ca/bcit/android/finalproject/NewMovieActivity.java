@@ -26,6 +26,7 @@ public class NewMovieActivity extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.my_toolbar);
         setSupportActionBar(toolbar);
         getSupportActionBar().setHomeAsUpIndicator(R.drawable.ic_close);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         setTitle("Add Movie");
         editTextTitle = (EditText) findViewById(R.id.edit_text_title);
         editTextDescription = (EditText) findViewById(R.id.edit_text_description);
@@ -36,7 +37,7 @@ public class NewMovieActivity extends AppCompatActivity {
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater menuInflater = getMenuInflater();
-        menuInflater.inflate(R.menu.new_movie_menu, menu);
+        menuInflater.inflate(R.menu.menu_new_movie, menu);
         return super.onCreateOptionsMenu(menu);
     }
 
@@ -57,13 +58,13 @@ public class NewMovieActivity extends AppCompatActivity {
         String url = editTextUrl.getText().toString();
 
         if (title.trim().isEmpty() || description.trim().isEmpty() || url.trim().isEmpty()) {
-            Toast.makeText(this, "Please insert a title, description and url", Toast.LENGTH_LONG).show();
+            Toast.makeText(this, "Enter name, description, and url of movie.", Toast.LENGTH_LONG).show();
             return;
         }
 
         CollectionReference movieRef = FirebaseFirestore.getInstance().collection("Movies");
         movieRef.add(new Movie(title, description, url));
-        Toast.makeText(this, "Movie successfully added.", Toast.LENGTH_LONG).show();
+        Toast.makeText(this, "Movie added successfully.", Toast.LENGTH_LONG).show();
         finish();
     }
 }

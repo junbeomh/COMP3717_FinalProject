@@ -5,12 +5,10 @@
     </style>
 
     <style name="WelcomeTheme" parent="Theme.AppCompat.Light.NoActionBar">
-        <item name="android:background">@color/colorWhite</item>
         <item name="android:textColor">@color/colorPrimary</item>
     </style>
 
     <style name="ApplicationTheme" parent="Theme.AppCompat.Light.NoActionBar">
-        <item name="android:background">@color/colorBackground</item>
     </style>
 
 

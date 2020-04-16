@@ -1,22 +1,5 @@
 <resources>
-    <string name="app_name">Movie</string>
+    <string name="app_name">Movies</string>
 
-    <!-- MapActivity -->
-    <string name="map_activity_search">search</string>
-    <string name="map_activity_search_hint">search location here</string>
-
-    <!-- Bottom Navigation     -->
-    <string name="bottom_nav_fav"> Favourites </string>
-    <string name="bottom_nav_profile"> Profile </string>
-    <string name="bottom_nav_search"> Search </string>
-
-
-    <string-array name="region_spinner_items">
-        <item>Spinner Item One</item>
-        <item>Spinner Item Two</item>
-        <item>Spinner Item Three</item>
-        <item>Spinner Item Four</item>
-        <item>Spinner Item Five</item>
-    </string-array>
 
 </resources>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/action_profile"
+        android:enabled="true"
+        android:title="@string/bottom_nav_profile"
+        android:icon="@drawable/ic_action_profile"
+        />
+
+    <item
+        android:id="@+id/action_search"
+        android:enabled="true"
+        android:title="@string/bottom_nav_search"
+        android:icon="@drawable/ic_action_search"
+        />
+
+    <item
+        android:id="@+id/action_fav"
+        android:enabled="true"
+        android:title="@string/bottom_nav_fav"
+        android:icon="@drawable/ic_action_fav"
+        />
+
+</menu>

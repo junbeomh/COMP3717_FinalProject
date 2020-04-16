@@ -6,7 +6,11 @@ import com.google.firebase.firestore.IgnoreExtraProperties;
 @IgnoreExtraProperties
 public class Movie {
 
-    String name, description, url;
+    private String name;
+
+
+    private String description;
+    private String url;
 
     public Movie(){
 
@@ -27,12 +31,7 @@ public class Movie {
         return name;
     }
 
-
-    public String getDescritpion() {
+    public String getDescription() {
         return description;
     }
-
-
-
-
 }

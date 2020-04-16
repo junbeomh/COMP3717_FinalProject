@@ -29,11 +29,11 @@ public class MovieAdapter extends FirestoreRecyclerAdapter<Movie, MovieAdapter.M
     @Override
     protected void onBindViewHolder(@NonNull MovieHolder holder, int position, @NonNull Movie model) {
         holder.mTitle.setText(model.getName());
-        holder.mDescription.setText(model.getDescritpion());
+        holder.mDescription.setText(model.getDescription());
         holder.mUrl.setText(model.getUrl());
 
         Log.d(LOGTAG, "Name: " + model.getName());
-        Log.d(LOGTAG, "Description: " + model.getDescritpion());
+        Log.d(LOGTAG, "Description: " + model.getDescription());
         Log.d(LOGTAG, "Url: " + model.getUrl());
 
     }

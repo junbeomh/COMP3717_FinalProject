@@ -5,6 +5,7 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
     tools:context=".NewMovieActivity">
 
     <include
@@ -21,6 +22,10 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Title:"
+            android:textColor="@color/colorBackground"
+            android:textSize="@dimen/activity_text_title"
+            android:layout_marginTop="@dimen/activity_margin_xxlarge"
+            android:layout_marginBottom="@dimen/activity_margin_small"
             />
 
         <EditText
@@ -29,8 +34,11 @@
             android:layout_height="wrap_content"
             android:hint="Movie Title"
             android:inputType="text"
+            android:fontFamily="@font/roboto"
             android:layout_below="@id/textview_movie"
-            android:layout_marginBottom="12dp"/>
+            android:background="@color/colorBackground"
+            android:layout_marginBottom="@dimen/activity_margin_xxlarge"
+            />
 
 
         <TextView
@@ -38,31 +46,41 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@id/edit_text_title"
-            android:text="Description:" />
+            android:text="Description:"
+            android:textColor="@color/colorBackground"
+            android:textSize="@dimen/activity_text_title"
+            android:layout_marginBottom="@dimen/activity_margin_small"/>
 
         <EditText
             android:id="@+id/edit_text_description"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Movie Description"
+            android:fontFamily="@font/roboto"
             android:layout_below="@+id/textview_description"
             android:inputType="text"
-            android:layout_marginBottom="12dp"/>
+            android:layout_marginBottom="@dimen/activity_margin_xxlarge"
+            android:background="@color/colorBackground"/>
 
         <TextView
             android:id="@+id/textview_url"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Url:"
-            android:layout_below="@id/edit_text_description"/>
+            android:layout_below="@id/edit_text_description"
+            android:textColor="@color/colorBackground"
+            android:textSize="@dimen/activity_text_title"
+            android:layout_marginBottom="@dimen/activity_margin_small"/>
 
         <EditText
             android:id="@+id/edit_text_url"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto"
             android:hint="Movie Url"
             android:inputType="text"
             android:layout_below="@id/textview_url"
+            android:background="@color/colorBackground"
             />
     </RelativeLayout>
 </LinearLayout>
